@@ -18,7 +18,7 @@ public class Program {
         while (true) {
             try {
                 UI.clearScreen();
-                UI.printBoard(chessMatch.getPieces());
+                UI.printMath(chessMatch);
                 System.out.println();
                 System.out.print("Source: ");
                 ChessPosition source = UI.readChessPosition(sc);
@@ -40,7 +40,6 @@ public class Program {
             catch (InputMismatchException e) {
                 System.out.println(e.getMessage());
                 sc.nextLine();
-                /* Desfazer um commit, pois esqueci de um commit */
             }
         }
 
